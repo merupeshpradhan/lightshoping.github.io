@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popins',sans-serif;
+}
+body {
+    background: linear-gradient(270deg, #40E0D0, #ff8c00,  #ff0080);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+  }
+  @-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+  @-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+  @keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+.hero{
+    min-height: 100vh;
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #fff;
+    position: relative;
+}
+nav{
+    flex: 1;
+    padding: 35px 0%;
+    text-align: right;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.list-icon{
+    width: 27px;
+    margin-right: -6px;
+    cursor: pointer;
+    display: none;
+}
+.menu-img{
+    width: 27px;
+    cursor: pointer;
+}
+.logo{
+    width: 170px;
+    cursor: pointer;
+    margin: 0px 0;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.text-container p{
+    color: white;
+}
+.text-container{
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 31%;
+}
+.text-container h1{
+    font-size: 80px;
+    font-weight: 400;
+}
+.text-container a{
+    background: linear-gradient(270deg, #40E0D0, #ff8c00,  #ff0080);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+    text-decoration: none;
+    padding: 14px 40px;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 34%;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 12px;
+}
+.text-container p{
+    font-size: 20px;
+    margin-top: 2%;
+}
+.text-container .h1{
+    margin-left: 20%;
+}
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 150px;
+}
+@media only screen and (max-width:800px) {
+    .navbar{
+        size: 20%;
+    }
+    .navbar{
+        margin-top: 5%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .hero{
+        width: 100%;
+    }
+    nav ul{
+     position: absolute;
+     top:12%;
+     left: 0;
+     background:rgba(0, 0, 0, 0.35);
+     width: 100%;
+     overflow: hidden;
+     transition: max-height 1s ;
+    }
+    nav ul li{
+        margin-right: 85px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .list-icon
+    {
+      margin-top: 0%;
+      width: 9%;
+    }
+    .logo
+    {
+        margin-top: 0%;
+        width: 87%;
+        margin-left: -14%;
+    }
+    .menu-img
+    {
+     margin-top: 7%;
+     width: 65%;
+    }
+    .list-icon{
+        width: 9%;
+    }
+    nav ul{
+     position: absolute;
+     top:60px;
+     left: 0;
+     background:rgba(0, 0, 0, 0.35);
+     width: 100%;
+     overflow: hidden;
+     transition: max-height 1s ;
+    }
+    nav ul li{
+        margin-right: 85px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .list-icon
+    {
+        display: block;
+        cursor: pointer;
+    }
+
+    .text-container
+    {
+        margin-top: 40%;
+        margin-left: 0px;
+        align-items: center;
+    }
+    .text-container p{
+        width: 100%;
+        font-size: 40px;
+        margin-top: 19%;
+    }
+    .text-container .h1{
+        margin-left: 25%;
+        margin-top: 0%;
+    }
+    .text-container h1 {
+        margin-left: 10%;
+        font-size: 73px;
+        font-weight: 500;
+        margin-top: 10%;
+    }
+    .text-container a{
+        margin-top: 15%;
+        padding: 20px 60px;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="js/script.js"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="navbar">
+            <a href="home.html"><img src="images/menu.png" alt="img" class="menu-img"></a>
+            <a href="home.html"><img src="images/logo2.png" alt="logo" class="logo"></a>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="login.html">Latest</a></li>
+                    <li><a href="login.html">Modern</a></li>
+                    <li><a href="login.html">Contemporary</a></li>
+                    <li><a href="login.html">Afordable</a></li>
+                </ul>
+            </nav>
+            <img src="images/list.png" alt="list" class="list-icon" onclick="menutoggle()">
+        </div>
+        <div>
+        <div class="text-container">
+            <h1>Latest</h1>
+            <h1 class="h1">in Lighting</h1>
+            <p>This is the official lamp comapny Website. we are making a huhge collection of modern lamps in all
+                categories from home use to office use.</p>
+            <a href="login.html">Login </a>
+        </div>
+    </div>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle()
+        {
+            if(    MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>

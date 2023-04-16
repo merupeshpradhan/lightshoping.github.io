@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="js/script.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="home.html"><img src="images/menu.png" alt="img" class="menu-img"></a>
+            <a href="home.html"><img src="images/logo2.png" alt="logo" class="logo"></a>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="login.html">Latest</a></li>
+                    <li><a href="login.html">Modern</a></li>
+                    <li><a href="login.html">Contemporary</a></li>
+                    <li><a href="login.html">Afordable</a></li>
+                </ul>
+            </nav>
+            <img src="images/list.png" alt="list" class="list-icon" onclick="menutoggle()">
+        </div>
+        <div class="box">
+            <div class="container2">
+                <div class="header">
+                    <p>Welcome</p> 
+                    <marquee>If You Don't have a user ID,First create your user ID</marquee>
+                </div>
+                <div class="input_field">
+                    <form action="login.html" onsubmit="return check2()" method="get">
+                        <span><input type="text" class="input" placeholder="Email Id" required id="email"></span>
+                    </form>
+                </div>
+                <div class="input_field">
+                    <form action="login.html" onsubmit="return check2()" method="get">
+                        <span><input type="password" class="input" placeholder="password" required id="pass"></span>
+                    </form>
+                </div>
+                <div class="bottom">
+                    <div class="left">
+                        <input type="checkbox" id="check">
+                        <label for="check">remember me</label>
+                    </div>
+                    <div class="right">
+                        <label><a href="#">forget password?</a></label>
+                    </div>
+                </div>
+                <div class="input_field">
+                    <span><input type="submit" class="submit" value="Login" onclick="Login()" id="bt"></span>
+                </div>
+                <div class="last">
+                    Don't have an account?
+                    <label><a href="register.html">Register</a></label>
+                </div>
+            </div>
+        </div>
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            MenuItems.style.maxHeight = "0px";
+    
+            function menutoggle()
+            {
+                if(    MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+                else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+</body>
+
+</html>

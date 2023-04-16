@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/script.js"></script>
+    <title>Register</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="home.html"><img src="images/menu.png" alt="img" class="menu-img"></a>
+            <a href="home.html"><img src="images/logo2.png" alt="logo" class="logo"></a>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="login.html">Latest</a></li>
+                    <li><a href="login.html">Modern</a></li>
+                    <li><a href="login.html">Contemporary</a></li>
+                    <li><a href="login.html">Afordable</a></li>
+                </ul>
+            </nav>
+            <img src="images/list.png" alt="list" class="list-icon" onclick="menutoggle()">
+        </div>
+        <div class="box1">
+            <div class="data">
+                <div class="header">
+                    <header>Register</header>
+                </div>
+                <div class="data-inpute">
+                    <div>
+                        <form action="registration.html" onsubmit="return store()" method="get">
+                            <span><input type="text" class="regi" placeholder="Name" id="name"></span>
+                        </form>
+                    </div>
+                    <div>
+                        <form action="registration.html" onsubmit="return store()" method="get">
+                            <span><input type="text" class="regi" placeholder="Email" id="email"></span>
+                        </form>
+                    </div>
+                    <div>
+                        <form action="registration.html" onsubmit="return store()" method="get">
+                            <span><input type="password" class="regi" placeholder="password" id="password"></span>
+                        </form>
+                    </div>
+                    <div>
+                        <form action="registration.html" onsubmit="return store()" method="get">
+                            <span><input type="password" class="regi" placeholder="conform password"id="cnfpassword"></span>
+                        </form>
+                    </div>
+                    <div>
+                        <span><input type="submit" class="register" value="Submit" onclick="store()" id="bt"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle()
+        {
+            if(    MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
